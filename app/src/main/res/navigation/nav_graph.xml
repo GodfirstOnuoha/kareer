@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.godfirst.kareer.ui.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_careerFragment"
+            app:destination="@id/careerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/careerFragment"
+        android:name="com.godfirst.kareer.ui.CareerFragment"
+        android:label="fragment_career"
+        tools:layout="@layout/fragment_career" >
+        <action
+            android:id="@+id/action_careerFragment_to_pathsFragment"
+            app:destination="@id/pathsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pathsFragment"
+        android:name="com.godfirst.kareer.ui.PathsFragment"
+        android:label="fragment_paths"
+        tools:layout="@layout/fragment_paths" >
+        <action
+            android:id="@+id/action_pathsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <argument
+            android:name="career"
+            app:argType="string"
+            android:defaultValue="Career" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.godfirst.kareer.ui.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="path"
+            app:argType="com.godfirst.kareer.models.Paths" />
+    </fragment>
+</navigation>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Kareer</string>
+    <string name="welcome_intro">Welcome to this Career Guiding App that takes you through some career journey even as novice.</string>
+    <string name="get_started">Get Started</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="what_career_do_you_want">What career do you want?</string>
+    <string name="select_a_particular_career">Select a particular career and we will show you its description.</string>
+    <string name="content_writing">Content Writing</string>
+    <string name="arts_and_design"><![CDATA[Arts & Design]]></string>
+    <string name="human_resources">Human Resources</string>
+    <string name="programming">Programming</string>
+    <string name="digital_marketing">Digital Marketing</string>
+    <string name="customer_service">Customer Service</string>
+    <string name="read_more">Read more</string>
+    <string name="description">Description</string>
+    <string name="share">Share</string>
+</resources>
